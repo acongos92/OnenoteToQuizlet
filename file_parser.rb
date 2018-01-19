@@ -9,8 +9,7 @@ class FileParser
     f = File.new(@file_name, 'r')
     arr = Array.new
     f.each do |line|
-      word_def = line.split(':')
-      word_def.each {|word| arr.push(word)}
+      arr.push(line)
     end
     arr
   end
